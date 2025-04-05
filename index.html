@@ -6,38 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            text-align: center;
-            background-color: #FFFFFF;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #ffffff;
             color: #333333;
             margin: 0;
-            padding: 40px;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header, footer {
+            background-color: #1D3D5F;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
         }
         .logo {
-            width: 200px;
-            margin-bottom: 20px;
+            width: 250px;
+            margin: 20px auto;
         }
-        h1 {
+        main {
+            padding: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        h1, h2 {
             color: #1D3D5F;
         }
-        p {
-            font-size: 16px;
-            max-width: 600px;
-            margin: 0 auto 30px;
-        }
-        .contact-btn {
+        .button {
             background-color: #2E8B57;
             color: white;
-            padding: 10px 20px;
             text-decoration: none;
+            padding: 10px 20px;
             border-radius: 5px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+        .button:hover {
+            background-color: #246b43;
+        }
+        .section {
+            margin-bottom: 40px;
         }
     </style>
 </head>
 <body>
-    <img class="logo" src="https://github.com/Shannyd999/MD-Property-Innovations/raw/main/36267e831741c1a29b6ebaed2b204c9b.png" alt="MD Property Innovations Ltd Logo">
-    <h1>MD Property Innovations Ltd</h1>
-    <p>We're currently building our online presence. Stay tuned for the launch of our website. For any immediate inquiries, please contact us directly.</p>
-    <a class="contact-btn" href="mailto:info@mdpropertyinnovations.co.uk">Contact Us</a>
+    <header>
+        <img class="logo" src="https://github.com/Shannyd999/MD-Property-Innovations/raw/main/36267e831741c1a29b6ebaed2b204c9b.png" alt="MD Property Innovations Logo">
+    </header>
+
+    <main>
+        <section class="section">
+            <h1>Welcome to MD Property Innovations Ltd</h1>
+            <p>We specialise in transforming outdated properties into modern, desirable homes. Our vision is to build lasting value through strategic property investment.</p>
+        </section>
+
+        <section class="section">
+            <h2>Our Investment Strategy</h2>
+            <p>We focus on flips, Buy-Refurb-Refinance (BRR), rentals, and international holiday lets to build a diverse, sustainable portfolio.</p>
+        </section>
+
+        <section class="section">
+            <h2>Investor Information Pack</h2>
+            <p>Interested in investing or working with us? Download our Investor Pack to learn more about our approach and upcoming opportunities.</p>
+            <a href="https://github.com/Shannyd999/MD-Property-Innovations/raw/main/MD_Property_Investor_Pack_FINAL.pdf" class="button" download>Download Investor Pack</a>
+        </section>
+
+        <section class="section">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:info@mdpropertyinnovations.co.uk">info@mdpropertyinnovations.co.uk</a><br>
+            David: 07835 865432 | Shannon: 07903 109180</p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; MD Property Innovations Ltd, 2025
+    </footer>
 </body>
 </html>
