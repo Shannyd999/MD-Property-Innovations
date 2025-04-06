@@ -1,85 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>MD Property Innovations Ltd</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background-color: #ffffff;
-            color: #333333;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        header, footer {
-            background-color: #1D3D5F;
-            color: #ffffff;
-            padding: 20px;
-            text-align: center;
-        }
-        .logo {
-            width: 250px;
-            margin: 20px auto;
-        }
-        main {
-            padding: 30px;
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        h1, h2 {
-            color: #1D3D5F;
-        }
-        .button {
-            background-color: #2E8B57;
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            margin-top: 20px;
-            display: inline-block;
-        }
-        .button:hover {
-            background-color: #246b43;
-        }
-        .section {
-            margin-bottom: 40px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MD Property Innovations Ltd</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #ffffff;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background-color: #1D3D5F;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+    }
+    .logo {
+      max-width: 300px;
+      display: block;
+      margin: 0 auto 20px;
+    }
+    main {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #1D3D5F;
+    }
+    .button {
+      background-color: #2E8B57;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 15px;
+    }
+    .section {
+      margin-bottom: 50px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <img class="logo" src="https://github.com/Shannyd999/MD-Property-Innovations/raw/main/36267e831741c1a29b6ebaed2b204c9b.png" alt="MD Property Innovations Logo">
-    </header>
+  <header>
+    <img class="logo" src="https://github.com/Shannyd999/MD-Property-Innovations/raw/main/36267e831741c1a29b6ebaed2b204c9b.png" alt="MD Property Innovations Logo">
+    <h1>MD Property Innovations Ltd</h1>
+  </header>
 
-    <main>
-        <section class="section">
-            <h1>Welcome to MD Property Innovations Ltd</h1>
-            <p>We specialise in transforming outdated properties into modern, desirable homes. Our vision is to build lasting value through strategic property investment.</p>
-        </section>
+  <main>
+    <section class="section">
+      <h2>Welcome</h2>
+      <p>We specialise in turning tired and unloved properties into modern, desirable homes. Whether you're looking to invest, partner with us, or simply see our work — you're in the right place.</p>
+    </section>
 
-        <section class="section">
-            <h2>Our Investment Strategy</h2>
-            <p>We focus on flips, Buy-Refurb-Refinance (BRR), rentals, and international holiday lets to build a diverse, sustainable portfolio.</p>
-        </section>
+    <section class="section">
+      <h2>Our Investment Strategy</h2>
+      <p>Our approach focuses on flipping below-market-value homes and recycling profits into long-term buy-to-let properties, BRR deals, and future holiday lets. Our goal: a diverse, multi-million-pound portfolio.</p>
+    </section>
 
-        <section class="section">
-            <h2>Investor Information Pack</h2>
-            <p>Interested in investing or working with us? Download our Investor Pack to learn more about our approach and upcoming opportunities.</p>
-            <a href="https://github.com/Shannyd999/MD-Property-Innovations/raw/main/MD_Property_Investor_Pack_FINAL.pdf" class="button" download>Download Investor Pack</a>
-        </section>
+    <section class="section">
+      <h2>Download Our Investor Pack</h2>
+      <p>Discover who we are, what we do, and how we operate. Download our professionally designed investor pack.</p>
+      <a class="button" href="https://github.com/Shannyd999/MD-Property-Innovations/raw/main/MD_Property_Investor_Pack_FINAL.pdf" target="_blank">Download Pack</a>
+    </section>
 
-        <section class="section">
-            <h2>Contact Us</h2>
-            <p>Email: <a href="mailto:info@mdpropertyinnovations.co.uk">info@mdpropertyinnovations.co.uk</a><br>
-            David: 07835 865432 | Shannon: 07903 109180</p>
-        </section>
-    </main>
+    <section class="section">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:info@mdpropertyinnovations.co.uk">info@mdpropertyinnovations.co.uk</a></p>
+      <p>David – 07835 865432<br>Shannon – 07903 109180</p>
+    </section>
+  </main>
 
-    <footer>
-        &copy; MD Property Innovations Ltd, 2025
-    </footer>
+  <footer>
+    <p>&copy; 2025 MD Property Innovations Ltd</p>
+  </footer>
+
+  <!-- Formspree floating button -->
+  <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+  <script>
+    window.formbutton = window.formbutton || function() {
+      (formbutton.q = formbutton.q || []).push(arguments);
+    };
+    formbutton("create", {
+      action: "https://formspree.io/f/mblgpjbn",
+      title: "How can we help?",
+      fields: [
+        {
+          type: "email",
+          label: "Email:",
+          name: "email",
+          required: true,
+          placeholder: "your@email.com"
+        },
+        {
+          type: "textarea",
+          label: "Message:",
+          name: "message",
+          placeholder: "What's on your mind?"
+        },
+        { type: "submit" }
+      ],
+      styles: {
+        title: { backgroundColor: "gray" },
+        button: { backgroundColor: "gray" }
+      }
+    });
+  </script>
 </body>
 </html>
+
