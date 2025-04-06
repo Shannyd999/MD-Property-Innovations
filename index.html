@@ -69,17 +69,17 @@
     </section>
 
     <section class="section">
-  <h2>Contact Us</h2>
-  <p>Email: <a href="mailto:info@mdpropertyinnovations.co.uk">info@mdpropertyinnovations.co.uk</a><br>
-  David: 07835 865432 | Shannon: 07903 109180</p>
-</section>
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:info@mdpropertyinnovations.co.uk">info@mdpropertyinnovations.co.uk</a><br>
+      David: 07835 865432 | Shannon: 07903 109180</p>
+    </section>
   </main>
 
   <footer>
     <p>&copy; 2025 MD Property Innovations Ltd</p>
   </footer>
 
-  <!-- Enhanced Formspree floating button -->
+  <!-- Enhanced Formspree floating button with icons and message -->
   <script src="https://formspree.io/js/formbutton-v1.min.js"></script>
   <script>
     window.formbutton = window.formbutton || function() {
@@ -92,16 +92,29 @@
       fields: [
         {
           type: "email",
-          label: "Email:",
+          label: "✉️ Email:",
           name: "email",
           required: true,
           placeholder: "you@example.com"
         },
         {
+          type: "text",
+          label: "📞 Phone Number:",
+          name: "phone",
+          placeholder: "07700 900123"
+        },
+        {
+          type: "text",
+          label: "📝 Subject:",
+          name: "subject",
+          placeholder: "How can we help?"
+        },
+        {
           type: "textarea",
-          label: "Message:",
+          label: "💬 Message:",
           name: "message",
-          placeholder: "Let us know how we can help..."
+          placeholder: "Let us know how we can help...",
+          required: true
         },
         { type: "submit" }
       ],
@@ -119,6 +132,9 @@
           borderRadius: "8px",
           zIndex: 9999
         }
+      },
+      onResponse: function() {
+        alert("Thank you for getting in touch! We'll get back to you shortly.\n\nWarm regards,\nDavid & Shannon");
       }
     });
   </script>
