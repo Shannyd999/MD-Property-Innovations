@@ -43,6 +43,10 @@
     .section {
       margin-bottom: 50px;
     }
+    .contact-section p {
+      margin: 0.5em 0;
+      line-height: 1.6;
+    }
   </style>
 </head>
 <body>
@@ -68,7 +72,7 @@
       <a class="button" href="https://github.com/Shannyd999/MD-Property-Innovations/raw/main/MD_Property_Investor_Pack_FINAL.pdf" target="_blank">Download Pack</a>
     </section>
 
-    <section class="section">
+    <section class="section contact-section">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:info@mdpropertyinnovations.co.uk">info@mdpropertyinnovations.co.uk</a></p>
       <p>David – 07835 865432<br>Shannon – 07903 109180</p>
@@ -79,8 +83,8 @@
     <p>&copy; 2025 MD Property Innovations Ltd</p>
   </footer>
 
-  <!-- Enhanced Formspree floating button -->
-  <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+  <!-- Improved Formspree floating button -->
+  <script src="https://formspree.io/js/formbutton-v1.min.js"></script>
   <script>
     window.formbutton = window.formbutton || function() {
       (formbutton.q = formbutton.q || []).push(arguments);
@@ -88,7 +92,7 @@
     formbutton("create", {
       action: "https://formspree.io/f/mblgpjbn",
       title: "Get in Touch",
-      position: "bottom-left",
+      position: "top-left",
       fields: [
         {
           type: "email",
@@ -107,4 +111,20 @@
       ],
       styles: {
         title: {
-          backgroundColor: "#
+          backgroundColor: "#2E8B57",
+          color: "#fff"
+        },
+        button: {
+          backgroundColor: "#2E8B57",
+          color: "#fff",
+          boxShadow: "0px 4px 10px rgba(0,0,0,0.2)",
+          padding: "12px 20px",
+          fontSize: "16px",
+          borderRadius: "8px",
+          zIndex: 9999
+        }
+      }
+    });
+  </script>
+</body>
+</html>
